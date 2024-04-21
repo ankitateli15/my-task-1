@@ -1,0 +1,35 @@
+.form-input{
+    /* height: 35px; */
+    margin-bottom: 20px;
+    padding-left: 15px;
+    color: blueviolet;
+
+}
+.common-form{
+    display: flex;
+    flex-direction: column;
+
+  
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+   /* border-radius: 10px; */
+    justify-content: center;
+    margin-right: 10px;
+}
+/* .center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
+
+} */
+.container-fluid{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.close{
+    border-radius: 15px;
+}

@@ -1,0 +1,72 @@
+ <div class="container-fluid ">
+  <div class="row mt-5">
+    <div>
+      <div class="card shadaw">
+        <div class="card-body">
+          <form [formGroup]="myReactiveForm" class="ml-4  common-form " (submit)="addProduct()">
+            
+            <div class="form-group">
+
+              <label for="image">Image</label>
+              <input type="text" class="form-control form-input" id="image" formControlName="image">
+              <span class="small text-danger" *ngIf=""></span>
+              
+            </div>
+
+            <div class="form-group">
+              <label for="productName">Product Name</label>
+              <input type="text" class="form-control form-input" id="productN" formControlName="productName">
+              <span class="small text-danger" *ngIf=" "></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="price">Price</label>
+              <input type="text" class="form-control form-input" id="price" formControlName="price">
+              <span class="small text-danger" *ngIf=""></span>
+            </div>
+            <div class="row">
+              <div mat-dialog-action>
+                <button  mat-button type="submit" class="btn btn-primary btn-sm">Add Product</button>
+              
+                  <button  class="close" (click)="closeDialog()" mat-raised-button  mat-dialog closed class="btn btn-danger" color="warn"  margin-left="30px" style="padding-right: 15px;">Close</button>
+                
+    
+                <!-- <button mat-icon-button  class="close-button" type="button"  [mat-dialog-close]="true">
+             
+                  <mat-icon class="close-icon" color="warn" class>close</mat-icon>
+               
+                   </button> -->
+                </div>
+            </div>
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<!-- <form [formGroup]="myReactiveForm" (submit)="addProduct()">
+  <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+     <mat-icon class="close-icon" color="warn">close</mat-icon>
+   </button>
+<h1 mat-dialog-title>Add Product</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+   <mat-label>Product Name</mat-label>
+   <input formControlName="productName" matInput>
+ 
+  </mat-form-field>
+  <mat-form-field>
+   <mat-label>Product Image</mat-label>
+   <input formControlName="image" matInput>
+ 
+  </mat-form-field>
+  <mat-form-field>
+   <mat-label>Product Price</mat-label>
+   <input  formControlName="price" matInput>
+ 
+  </mat-form-field>
+  <button  mat-button color="primary">Add Product</button> -->
